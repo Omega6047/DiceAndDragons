@@ -1,0 +1,39 @@
+﻿<Window x:Class="DiceAndDragons.View.V_AddExp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiceAndDragons.View"
+        mc:Ignorable="d"
+        Title="Window1" Height="250" Width="350" ResizeMode="NoResize">
+    <Window.Resources>
+        <FontFamily x:Key="Draconis">/Fonts/#Draconis</FontFamily>
+    </Window.Resources>
+
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Amount: " Grid.Row="0" Grid.Column="0"
+               HorizontalAlignment="Right" VerticalAlignment="Center" 
+               FontFamily="{StaticResource Draconis}" FontSize="38"/>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="addExp"
+                 FontFamily="{StaticResource Draconis}" FontSize="35"
+                 TextAlignment="Left" VerticalAlignment="Center"
+                 Padding="2 5"
+                 PreviewTextInput="IsNumeric"/>
+
+        <Button Content="Add" FontFamily="{StaticResource Draconis}" FontSize="38"
+                Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"
+                VerticalAlignment="Center" HorizontalAlignment="Center"
+                Padding="40 5"
+                Click="buttonAdd"/>
+
+    </Grid>
+</Window>

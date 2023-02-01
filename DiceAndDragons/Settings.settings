@@ -1,0 +1,119 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DiceAndDragons" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="customDiceMin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="customDiceMax" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="rollModeD6" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="imgPortreit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/Image/UI/Portreit_default.png</Value>
+    </Setting>
+    <Setting Name="bioName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Johnny Bravo</Value>
+    </Setting>
+    <Setting Name="bioAlignment" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Chaotic Neutral</Value>
+    </Setting>
+    <Setting Name="bioRace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Human</Value>
+    </Setting>
+    <Setting Name="bioClass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bard</Value>
+    </Setting>
+    <Setting Name="bioFull" Type="System.String" Scope="User">
+      <Value Profile="(Default)">	The main protagonist of his own life. His shallow, boorish, and dim-witted traits lead to an incorrigible inability to attract women, as well as getting beaten up by them or just about anyone.
+
+	During high school, Johnny was very scrawny, weighing at 98 pounds with a mullet. He had a crush on Sandy Baker, the prettiest and nicest girl in school. One day, Johnny was thrown into a trash can by a bully named Trent. Sandy intervened and made him apologize to Johnny for picking on guys without huge muscles. Realizing they were in the same Spanish class, Sandy offered to come over and study with Johnny. That night, Johnny asked Sandy to the prom; she cried and happily said yes. Knowing that he was going to go to prom with Sandy, Johnny decided that she deserved to go with a "hunkin' stud".</Value>
+    </Setting>
+    <Setting Name="bioLvl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="bioExp" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="charSTR" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="charDEX" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="charCON" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="charINT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="charWIS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="charCHA" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="bonusSTR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(+0)</Value>
+    </Setting>
+    <Setting Name="bonusDEX" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(+0)</Value>
+    </Setting>
+    <Setting Name="bonusCON" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(+0)</Value>
+    </Setting>
+    <Setting Name="bonusINT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(+0)</Value>
+    </Setting>
+    <Setting Name="bonusWIS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(+0)</Value>
+    </Setting>
+    <Setting Name="bonusCHA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(+0)</Value>
+    </Setting>
+    <Setting Name="bioAge" Type="System.String" Scope="User">
+      <Value Profile="(Default)">22</Value>
+    </Setting>
+    <Setting Name="bioHeight" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1,92m</Value>
+    </Setting>
+    <Setting Name="bioSex" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Male</Value>
+    </Setting>
+    <Setting Name="bioGender" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Man</Value>
+    </Setting>
+    <Setting Name="bioBirthD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7-7-1997</Value>
+    </Setting>
+    <Setting Name="bioBirthP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Aron City</Value>
+    </Setting>
+    <Setting Name="bioBlood" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="bioAppearance" Type="System.String" Scope="User">
+      <Value Profile="(Default)">	Johnny wears a black shirt, blue jeans, black shoes, gelled up blonde hair, and his signature sunglasses. He has a very muscular build.</Value>
+    </Setting>
+    <Setting Name="bioAltName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Wierd Guy, J.B.</Value>
+    </Setting>
+    <Setting Name="bioAlly" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bunny Bravo, Myra Bravo, Fiona Bravo, Lou Bravo</Value>
+    </Setting>
+    <Setting Name="bioEnemy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Christopher, Donny Osmond</Value>
+    </Setting>
+    <Setting Name="bioStrong" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Large Muscles, </Value>
+    </Setting>
+    <Setting Name="bioWeak" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Extremally uncharismatic, Hated by woman,</Value>
+    </Setting>
+    <Setting Name="bioPersonality" Type="System.String" Scope="User">
+      <Value Profile="(Default)">	Johnny Bravo is an extremely dim-witted, ill-mannered and inconsiderate beefcake. He's very full of himself, constantly checking mirrors and flexing his muscles in front of women. During a conversation with women, Johnny will always try to find a way to turn the conversation around so that they are talking about him in an effort to make the girl realize his positive traits, although this effort to do so exemplifies him as a narcissist. Johnny also naively and faultily believes that all women want him, even when they express the fact that they are uninterested. Because of this, Johnny has the courage to talk to any woman without hesitation.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

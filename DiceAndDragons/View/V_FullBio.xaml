@@ -1,0 +1,169 @@
+﻿<Window x:Class="DiceAndDragons.View.V_FullBio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiceAndDragons"
+        mc:Ignorable="d"
+        Title="V_FullBio" Height="600" Width="900">
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,1,0,-1">
+        
+        <Grid ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width=".7*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                
+                <Label Content="{Binding bioName, Source={x:Static local:Settings.Default}}" 
+                       FontFamily="Draconis" FontSize="40" 
+                       HorizontalAlignment="Center"/>
+                
+                
+                <!--Description-->
+                <TextBlock Text="{Binding bioFull, Source={x:Static local:Settings.Default}}" TextWrapping="Wrap"
+                           FontFamily="Times New Roman" FontSize="20" TextAlignment="Justify"
+                           Margin="10">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBlock Text="{Binding bioPersonality, Source={x:Static local:Settings.Default}}" TextWrapping="Wrap"
+                           FontFamily="Times New Roman" FontSize="20" TextAlignment="Justify"
+                           Margin="10">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <Separator/>
+                
+                <!--Additional-->
+                <StackPanel Margin="20 10">
+
+                    <!--////////// Pseudonims //////////-->
+                    <TextBlock Tag="AltName" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="5">
+                            <Run Text="Pseudonims:"  FontWeight="Bold"/>
+                            <Run Text="{Binding bioAltName, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                        </TextBlock>
+
+                    <!--////////// Allies //////////-->
+                    <TextBlock Tag="Ally" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="5">
+                            <Run Text="Allies" FontWeight="Bold"/>
+                            <Run Text="{Binding bioAlly, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                    </TextBlock>
+
+                    <!--////////// Enemies //////////-->
+                    <TextBlock Tag="Enemy" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="5">
+                            <Run Text="Enemies" FontWeight="Bold"/>
+                            <Run Text="{Binding bioEnemy, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                    </TextBlock>
+
+                    <!--////////// Strenghts //////////-->
+                    <TextBlock Tag="Strong" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="5">
+                            <Run Text="Strengths:" FontWeight="Bold"/>
+                            <Run Text="{Binding bioStrong, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                    </TextBlock>
+
+                    <!--////////// Weaknesses //////////-->
+                    <TextBlock Tag="Weak" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="5">
+                            <Run Text="Weaknesses:" FontWeight="Bold"/>
+                            <Run Text="{Binding bioWeak, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                    </TextBlock>
+                    
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="5">
+
+                <!--////////// Portreit //////////-->
+                <Image Source="{Binding imgPortreit, Source={x:Static local:Settings.Default}}"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Margin="5"/>
+
+                <Separator/>
+
+                <!--////////// Appearance //////////-->
+                <TextBlock Text="{Binding bioAppearance, Source={x:Static local:Settings.Default}}" TextWrapping="Wrap"
+                           FontFamily="Times New Roman" FontSize="20" TextAlignment="Justify"
+                           Margin="5">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+
+                <!--////////// Age //////////-->
+                <TextBlock Tag="Age" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="15 5">
+                    <Run Text="Age:" FontWeight="Bold"/>
+                    <Run Text="{Binding bioAge, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}', Mode=OneWay}"/>
+                </TextBlock>
+
+                <!--////////// Day of Birth //////////-->
+                <TextBlock Tag="BirthD" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="15 5">
+                    <Run Text="Day of Birth:" FontWeight="Bold"/>
+                    <Run Text="{Binding bioBirthD, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                </TextBlock>
+
+                <!--////////// Place of Birth //////////-->
+                <TextBlock Tag="BirthP" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="15 5">
+                     <Run Text="Place of Birth:" FontWeight="Bold"/>
+                     <Run Text="{Binding bioBirthP, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                </TextBlock>
+
+                <!--////////// Height //////////-->
+                <TextBlock Tag="Height" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="15 5">
+                     <Run Text="Height:" FontWeight="Bold"/>
+                     <Run Text="{Binding bioHeight, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                </TextBlock>
+
+                <!--////////// Blood Type //////////-->
+                <TextBlock Tag="Blood" Visibility="Visible" Initialized="setText"
+                           FontFamily="Times New Roman" FontSize="20" Margin="15 5">
+                     <Run Text="Blood Type:" FontWeight="Bold"/>
+                     <Run Text="{Binding bioBlood, Source={x:Static local:Settings.Default}, 
+                            StringFormat=' {0}'}"/>
+                </TextBlock>
+
+            </StackPanel>
+            
+        </Grid>
+    </ScrollViewer>
+</Window>
